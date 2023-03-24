@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 5px 10px;
+  color: #f9faf8;
+  background-color: #3882f6;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 2px solid #f9faf8;
+  text-shadow: 1px 1px #1f2937;
+}
+
+button:hover {
+  background-color: #0d4aad;
+  cursor: pointer;
+}
+
+footer {
+  padding-block: 1rem;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+.nav_wrapper {
+  display: flex;
+  padding-block: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1f2937;
+}
+
+.nav_links {
+  display: flex;
+}
+
+.nav_wrapper h2 {
+  color: #f9faf8;
+  font-size: 24px;
+}
+
+.nav_links a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #e5e7eb;
+  padding: 0 30px;
+}
+
+.nav_links a:hover {
+  color: #0d4aad;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 4rem 0;
+  background-color: #1f2937;
+}
+
+.main img {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px #e5e7eb;
+}
+
+.main_text {
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 10px;
+}
+
+.main_text div {
+  height: 250px;
+  color: #f9faf8;
+}
+
+.main_text div h3 {
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+.info {
+  padding: 4rem 0;
+  font-size: 36px;
+  color: #1f2937;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info img {
+  margin-top: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #1f2937;
+}
+
+.info img:hover {
+  transform: rotate(-360deg);
+  transition: 1s;
+}
+
+.qoute {
+  text-align: center;
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  padding: 4rem;
+  background-color: #e5e7eb;
+}
+
+.signup {
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #3882f6;
+  padding: 20px 90px;
+  border: 1px solid #3882f6;
+  border-radius: 10px;
+  gap: 60px;
+  box-shadow: 5px 5px 5px #1f2937;
+}
+
+.container div {
+  color: #f9faf8;
+  text-shadow: 1px 1px #1f2937;
+}
+
+@media screen and (max-width: 775px) {
+  .main_text {
+    display: flex;
+    flex-direction: column;
+  }
+  .info {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
